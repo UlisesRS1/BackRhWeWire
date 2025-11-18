@@ -1,15 +1,13 @@
 package com.rh.card.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
 
 @Entity
 @Data
+@Table (name = "empleado")
 public class Empleado {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
