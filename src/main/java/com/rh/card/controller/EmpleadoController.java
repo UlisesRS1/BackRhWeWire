@@ -10,6 +10,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping ("/api/empleado")
+@CrossOrigin (origins = "*")
 public class EmpleadoController {
     private EmpleadoRepository empleadoRepository;
 

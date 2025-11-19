@@ -2,7 +2,6 @@ package com.rh.card.controller;
 
 import com.rh.card.model.Habilidad;
 import com.rh.card.repository.HabilidadRepository;
-import org.hibernate.dialect.function.ListaggStringAggEmulation;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +10,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping ("/api/habilidad")
+@CrossOrigin (origins = "*")
 public class HabilidadController {
     private HabilidadRepository habilidadRepository;
 
